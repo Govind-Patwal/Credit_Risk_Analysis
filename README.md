@@ -4,7 +4,12 @@
 ***Fast Lending***, a peer to peer lending services company wants to use machine learning to predict credit risk. Management believes that this will provide a quicker and more reliable loan experience. It also believes that machine learning will lead to more accurate identification of good candidates for loans which will lead to lower default rates. The company wants me to assist the lead Data Scientist, Jill, in implementing this plan. In my role, I will build and evaluate several machine learning models or algorithms to predict credit risk, I will use techniques such as resampling and boosting to make the most of my models and my data. Once I've designed and implemented these algorithms, I'll evaluate their performance and see how well my models predict data. To accomplish my task, I will dive headlong into machine learning algorithms, statistics, and data processing techniques.
 
 ## Purpose of this Analysis
-In this analysis, I have to apply machine learning to solve a real-world challenge: credit card risk. Credit risk is an inherently unbalanced classification problem, as good loans easily outnumber risky loans. Therefore, I’ll need to employ different techniques to train and evaluate models with unbalanced classes.
+In this analysis, I have to apply machine learning to solve a real-world challenge: credit card risk. Credit risk is an inherently unbalanced classification problem, as good loans easily outnumber risky loans. Therefore, I’ll need to employ different techniques to train and evaluate models with unbalanced classes. As a part of this analysis, I have to do the following:
+* Oversample the data using the `RandomOverSampler` and `SMOTE` algorithms
+* Undersample the data using the `ClusterCentroids` algorithm. 
+* Use a combinatorial approach of over- and undersampling using the `SMOTEENN `algorithm. 
+* Compare two new machine learning models that reduce bias, `BalancedRandomForestClassifier` and `EasyEnsembleClassifier`, to predict credit risk. 
+* Evaluate the performance of these models and make a written recommendation on whether they should be used to predict credit risk.
 
 ## Resources
 * Software/Tools: Google Colab, Visual Studio Code (v1.49.2), Jupyter Notebook
