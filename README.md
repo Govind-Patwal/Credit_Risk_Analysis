@@ -7,30 +7,55 @@
 In this analysis, I have to apply machine learning to solve a real-world challenge: credit card risk. Credit risk is an inherently unbalanced classification problem, as good loans easily outnumber risky loans. Therefore, I’ll need to employ different techniques to train and evaluate models with unbalanced classes.
 
 ## Resources
-* Software/Tools: Google Colab, Visual Studio Code (v1.49.2), JupyterNotebook
+* Software/Tools: Google Colab, Visual Studio Code (v1.49.2), Jupyter Notebook
 * Language(s): Python
+* Libraries: Pandas, Numpy
 * Data Source(s): https://github.com/Govind-Patwal/Credit_Risk_Analysis/blob/main/LoanStats_2019Q1.csv
 
-## Report on the Credit Risk Analysis
+## Credit Risk Analysis
+
+1. Naive Random Oversampling (Image below)
+    * Balanced Accuracy Score = 0.66
+    * Precision: High Risk = 0.01; Low Risk = 1.00
+    * Recall: High Risk = 0.71; Low Risk = 0.60
+
+    ![RandomOversampler](Resources/1_RandomOversampler.png)
+
+2. SMOTE (Image below)
+    * Balanced Accuracy Score = 0.64
+    * Precision: High Risk = 0.01; Low Risk = 1.00
+    * Recall: High Risk = 0.61; Low Risk = 0.67
+
+    ![SMOTE](Resources/2_SMOTE.png)
+
+3. Cluster Centroids Resampler (Image below)
+    * Balanced Accuracy Score = 0.54
+    * Precision: High Risk = 0.01; Low Risk = 1.00
+    * Recall: High Risk = 0.66; Low Risk = 0.43
+
+    ![ClusterCentroids](Resources/3_ClusterCentroids.png)
+
+4. SMOTEENN (Image below)
+    * Balanced Accuracy Score = 0.66
+    * Precision: High Risk = 0.01; Low Risk = 1.00
+    * Recall: High Risk = 0.77; Low Risk = 0.54
+
+    ![SMOTEENN](Resources/4_SMOTEENN.png)
 
 
-1. Random Oversampler
-![RandomOversampler](Resources/1_RandomOversampler.png)
+5. Balanced Random Forest Classifier (Image below)
+    * Balanced Accuracy Score = 0.79
+    * Precision: High Risk = 0.03; Low Risk = 1.00
+    * Recall: High Risk = 0.70; Low Risk = 0.87
 
-2. SMOTE
-![SMOTE](Resources/2_SMOTE.png)
-3. Cluster Centroids Resampler
-![ClusterCentroids](Resources/3_ClusterCentroids.png)
-
-4. SMOTEENN
-![SMOTEENN](Resources/4_SMOTEENN.png)
-
-
-5. Balanced Random Forest Classifier
-![BalancedRandomForestClassifier](Resources/5_BalancedRandomForestClassifier.png)
+    ![BalancedRandomForestClassifier](Resources/5_BalancedRandomForestClassifier.png)
 
 6. Easy Ensemble Classifier
-![EasyEnsembleClassifier](Resources/6_EasyEnsembleClassifier.png)
+    * Balanced Accuracy Score = 0.93
+    * Precision: High Risk = 0.09; Low Risk = 1.00
+    * Recall: High Risk = 0.92; Low Risk = 0.94
+
+    ![EasyEnsembleClassifier](Resources/6_EasyEnsembleClassifier.png)
 
 Deliverable 4: Written Report on the Credit Risk Analysis (30 points)
 Deliverable 4 Instructions
