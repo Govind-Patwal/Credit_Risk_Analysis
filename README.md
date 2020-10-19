@@ -9,7 +9,7 @@ In this analysis, I have to apply machine learning to solve a real-world challen
 ## Resources
 * Software/Tools: Google Colab, Visual Studio Code (v1.49.2), Jupyter Notebook
 * Language(s): Python
-* Libraries: Pandas, Numpy, Sklearn
+* Libraries: Pandas, Numpy, scikit-learn, imbalanced-learn
 * Data Source(s): https://github.com/Govind-Patwal/Credit_Risk_Analysis/blob/main/LoanStats_2019Q1.csv
 
 ## Results
