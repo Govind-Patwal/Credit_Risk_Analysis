@@ -51,7 +51,7 @@ In this analysis, I have to apply machine learning to solve a real-world challen
     * Precision: High Risk = 0.03; Low Risk = 1.00
     * Recall: High Risk = 0.70; Low Risk = 0.87
     * Balanced Accuracy Score = 0.79
-    * Accuracy Score is reasonaly good, much better as compared to the all 4 algorithms above
+    * Accuracy Score is reasonaly good, much better than the 4 algorithms above
 
     ![BalancedRandomForestClassifier](Resources/5_BalancedRandomForestClassifier.png)
 
