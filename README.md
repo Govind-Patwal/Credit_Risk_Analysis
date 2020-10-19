@@ -72,7 +72,7 @@ In this analysis, I have to apply machine learning to solve a real-world challen
 * Overall the 2 Ensemble performed way better than the Oversampling/Undersampling/Combination algorithms. 
 * The worst algorithm in terms of accuracy is `Cluster Centroids Undersampling` with a score of 0.54, while the best is `Easy Ensemble AdaBoost Classifier` with a score of 0.93
 * The low-risk precision score is the same across the board - 1.00
-* The high-risk precesion score is the best in the case of `Easy Ensemble AdaBoost Classifier` at 0.09 and the combined worst in all Oversampling/Undersampling/Combination algorithms at 0.01.
+* The high-risk precesion score is the best in the case of `Easy Ensemble AdaBoost Classifier` at 0.09 and combined lowest in all Oversampling/Undersampling/Combination algorithms at 0.01.
 * The Oversampling/Undersampling/Combination algorithms also fare poorely than the Ensemble algorithms in terms of recall scores for both high-risk and low-risk loans.
 
 ### Recommendation
