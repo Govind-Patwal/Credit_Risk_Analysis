@@ -14,28 +14,28 @@ In this analysis, I have to apply machine learning to solve a real-world challen
 
 ## Credit Risk Analysis
 
-1. Naive Random Oversampling (Image below)
+1. **Naive Random Oversampling** (Image below)
     * Balanced Accuracy Score = 0.66
     * Precision: High Risk = 0.01; Low Risk = 1.00
     * Recall: High Risk = 0.71; Low Risk = 0.60
 
     ![RandomOversampler](Resources/1_RandomOversampler.png)
 
-2. SMOTE (Image below)
+2. **SMOTE** (Image below)
     * Balanced Accuracy Score = 0.64
     * Precision: High Risk = 0.01; Low Risk = 1.00
     * Recall: High Risk = 0.61; Low Risk = 0.67
 
     ![SMOTE](Resources/2_SMOTE.png)
 
-3. Cluster Centroids Resampler (Image below)
+3. **Cluster Centroids Resampler** (Image below)
     * Balanced Accuracy Score = 0.54
     * Precision: High Risk = 0.01; Low Risk = 1.00
     * Recall: High Risk = 0.66; Low Risk = 0.43
 
     ![ClusterCentroids](Resources/3_ClusterCentroids.png)
 
-4. SMOTEENN (Image below)
+4. **SMOTEENN** (Image below)
     * Balanced Accuracy Score = 0.66
     * Precision: High Risk = 0.01; Low Risk = 1.00
     * Recall: High Risk = 0.77; Low Risk = 0.54
@@ -43,14 +43,14 @@ In this analysis, I have to apply machine learning to solve a real-world challen
     ![SMOTEENN](Resources/4_SMOTEENN.png)
 
 
-5. Balanced Random Forest Classifier (Image below)
+5. **Balanced Random Forest Classifier** (Image below)
     * Balanced Accuracy Score = 0.79
     * Precision: High Risk = 0.03; Low Risk = 1.00
     * Recall: High Risk = 0.70; Low Risk = 0.87
 
     ![BalancedRandomForestClassifier](Resources/5_BalancedRandomForestClassifier.png)
 
-6. Easy Ensemble Classifier
+6. **Easy Ensemble AdaBoost Classifier**
     * Balanced Accuracy Score = 0.93
     * Precision: High Risk = 0.09; Low Risk = 1.00
     * Recall: High Risk = 0.92; Low Risk = 0.94
