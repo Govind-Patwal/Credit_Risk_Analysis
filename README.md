@@ -1,7 +1,7 @@
 # Credit Risk Analysis
 
 ## Overview
-***Fast Lending***, a peer to peer lending services company wants to use machine learning to predict credit risk. Management believes that this will provide a quicker and more reliable loan experience. It also believes that machine learning will lead to more accurate identification of good candidates for loans which will lead to lower default rates. The company wants me to assist the lead Data Scientist, Jill, in implementing this plan. In my role, I will build and evaluate several machine learning models or algorithms to predict credit risk, I will use techniques such as resampling and boosting to make the most of my models and my data. Once I've designed and implemented these algorithms, I'll evaluate their performance and see how well my models predict data. To accomplish my task, I will dive headlong into machine learning algorithms, statistics, and data processing techniques.
+***Fast Lending***, a peer to peer lending services company wants to use machine learning to predict credit risk. Management believes that this will provide a quicker and more reliable loan experience. It also believes that machine learning will lead to more accurate identification of good candidates for loans which will lead to lower default rates. The company wants me to assist the lead Data Scientist, **Jill**, in implementing this plan. In my role, I will build and evaluate several machine learning models or algorithms to predict credit risk, I will use techniques such as resampling and boosting to make the most of my models and my data. Once I've designed and implemented these algorithms, I'll evaluate their performance and see how well my models predict data. To accomplish my task, I will dive headlong into machine learning algorithms, statistics, and data processing techniques.
 
 ## Purpose of this Analysis
 In this analysis, I have to apply machine learning to solve a real-world challenge: credit card risk. Credit risk is an inherently unbalanced classification problem, as good loans easily outnumber risky loans. Therefore, I’ll need to employ different techniques to train and evaluate models with unbalanced classes. As a part of this analysis, I have to do the following:
@@ -69,6 +69,11 @@ In this analysis, I have to apply machine learning to solve a real-world challen
     ![EasyEnsembleClassifier](Resources/6_EasyEnsembleClassifier.png)
 
 ## Summary
-Looking at the 6 algorithms, we can observe that the 2 Ensemble performed way better than the Oversampling/Undersampling/Combination algorithms. 
+* Overall the 2 Ensemble performed way better than the Oversampling/Undersampling/Combination algorithms. 
+* The worst algorithm in terms of accuracy is `Cluster Centroids Undersampling` with a score of 0.54, while the best is `Easy Ensemble AdaBoost Classifier` with a score of 0.93
+* The low-risk precision score is the same across the board - 1.00
+* The high-risk precesion score is the best in the case of `Easy Ensemble AdaBoost Classifier` at 0.09 and the combined worst in all Oversampling/Undersampling/Combination algorithms at 0.01.
+* The Oversampling/Undersampling/Combination algorithms also fare poorely than the Ensemble algorithms in terms of recall scores for both high-risk and low-risk loans.
 
-Furthermore, of the 2 Ensemble algorithms, the AdaBoost clearly stood out with 93% Accuracy. It also has the highest high-risk and low-risk recall scores. Finally, another very important place where it does much better as compared to others is the high-risk precision score - in this score it is 3x that of the algorith with the seconds highest precesion, and 9x that of the majority of the algorithms - this means it is 3-9 times more likely to spot high-risk loans, that can have serious consequences for any lender. This is therfore our best bet.
+### Recommendation
+AdaBoost - it clearly stood out with 93% Accuracy score. It also has the highest high-risk and low-risk recall scores. Finally, another very important place where it does much better as compared to others is the high-risk precision score - in this score it is 3x that of the algorithm with the second highest precision score, and 9x that of the majority of the algorithms - this means it is 3-9 times more likely to spot high-risk loans, which if unspotted can have serious consequences for any lender. 
