@@ -37,16 +37,16 @@ In this analysis, I have to apply machine learning to solve a real-world challen
 
 3. **Cluster Centroids Undersampling** (Image below)
     * Precision: High Risk = 0.01; Low Risk = 1.00
-    * Recall: High Risk = 0.66; Low Risk = 0.43
-    * Balanced Accuracy Score = 0.54
+    * Recall: High Risk = 0.66; Low Risk = 0.41
+    * Balanced Accuracy Score = 0.55
     * Accuracy score went down as compared to the last algorithm
 
     ![ClusterCentroids](Resources/3_ClusterCentroids.png)
 
 4. **SMOTEENN (Combination of Over and Undersampling)** (Image below)
     * Precision: High Risk = 0.01; Low Risk = 1.00
-    * Recall: High Risk = 0.77; Low Risk = 0.54
-    * Balanced Accuracy Score = 0.66
+    * Recall: High Risk = 0.77; Low Risk = 0.59
+    * Balanced Accuracy Score = 0.68
     * Accuracy score has imporved over last algorithm but still low
 
     ![SMOTEENN](Resources/4_SMOTEENN.png)
