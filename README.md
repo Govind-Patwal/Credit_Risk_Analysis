@@ -20,8 +20,8 @@ In this analysis, I have to apply machine learning to solve a real-world challen
 ## Results
 
 1. **Naive Random Oversampling** (Image below)
-    * Precision: High Risk = 0.01; Low Risk = 1.00
-    * Recall: High Risk = 0.71; Low Risk = 0.60
+    * Precision: High Risk = 0.01; Low Risk = 1.00 
+    * Recall: High Risk = 0.74; Low Risk = 0.58
     * Balanced Accuracy Score = 0.66
     * Accuracy score is very less
 
@@ -29,8 +29,8 @@ In this analysis, I have to apply machine learning to solve a real-world challen
 
 2. **SMOTE Oversampling** (Image below)
     * Precision: High Risk = 0.01; Low Risk = 1.00
-    * Recall: High Risk = 0.61; Low Risk = 0.67
-    * Balanced Accuracy Score = 0.64
+    * Recall: High Risk = 0.62; Low Risk = 0.68
+    * Balanced Accuracy Score = 0.65
     * Accuracy score is again very less
 
     ![SMOTE](Resources/2_SMOTE.png)
@@ -76,4 +76,4 @@ In this analysis, I have to apply machine learning to solve a real-world challen
 * The Oversampling/Undersampling/Combination algorithms also fare poorely than the Ensemble algorithms in terms of recall scores for both high-risk and low-risk loans.
 
 ### Recommendation
-AdaBoost - it clearly stood out with 93% Accuracy score. It also has the highest high-risk and low-risk recall scores. Finally, another very important place where it does much better as compared to others is the high-risk precision score - in this score it is 3x that of the algorithm with the second highest precision score, and 9x that of the majority of the algorithms - this means it is 3-9 times more likely to spot high-risk loans, which if unspotted can have serious consequences for any lender. 
+**AdaBoost**: It clearly stood out with 93% Accuracy score. It also has the highest high-risk and low-risk recall scores. Finally, another very important place where it does much better as compared to others is the high-risk precision score - in this score it is 3x that of the algorithm with the second highest precision score, and 9x that of the majority of the algorithms - this means it is 3-9 times more likely to spot high-risk loans, which if unspotted can have serious consequences for any lender. 
